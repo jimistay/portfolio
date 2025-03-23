@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../import/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <!--MENU IMPORT-->
+   <div id="menu-container"></div>
+   <script>
+       fetch('../../import/menu.html')
+           .then(response => response.text())
+           .then(data => {
+               document.getElementById('menu-container').innerHTML = data;
+           })
+           .catch(error => console.error('Erreur lors du chargement du menu:', error));
+   </script>
+  <!--PAGE 2-->
+  <div class="parcours">
+    <h2 class="title parcours-info-titre">Parcours scolaire :</h2>
+      <div class="parcours-line">
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>2019</h3>
+              <p class="filiere">BAC ES - Option Economie Approfondie</p>
+              <p class="place">Lycée Marc Chagall</p>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>2019-2020</h3>
+              <p class="filiere">CPGE Lettres LSH-A/L</p>
+              <p class="place">Lycée Jean Jaurès</p>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>2020-2022</h3>
+              <p class="filiere">Licence 3 LLCER</p>
+              <p class="place">Université de Lille</p>
+              <a href="diplome/Licence3.pdf" target="blank">Diplôme</a>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>2022-2024</h3>
+              <p class="filiere">BTS SIO option SLAM</p>
+              <p class="place">Lycée Parc de Vilgénis</p>
+              <a href="diplome/BTS.pdf" target="blank">Diplôme</a>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>2024-2025</h3>
+              <p class="filiere">Licence 3 MIAGE en apprentissage</p>
+              <p class="place">Université Paris-Saclay</p>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>2025-2027</h3>
+                <p class="filiere">Master MIAGE en apprentissage</p>
+                <p class="place">Information à venir</p>
+              </div>
+            </div>
+      </div>
+  </div>
+  <!--FOOTER-->
+  <div id="footer-container"></div>
+  <script>
+      fetch('../../import/footer.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('footer-container').innerHTML = data;
+          })
+          .catch(error => console.error('Erreur lors du chargement du menu:', error));
+  </script>
+</body>
+</html>

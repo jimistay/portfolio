@@ -1,0 +1,93 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.hidden {
+    display: none;
+}
+.all-page{
+    background-color: #fdf9f4;;
+}
+p, a, h1, h2, h3, h4, h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 88, 88);
+    font-size: 20px;
+}
+.page-main{
+    width: 90%;
+    margin: 0 auto;
+}
+.logo-img-link{
+    width: 80px;
+}
+.logo-img-git{
+    width: 100px;
+}
+.logo-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pp{
+    width: 30px;
+}
+
+.profil-informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profil-name{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #6c0b46;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.profil-presentation{
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-family: "Bariol Regular";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    color: #5c5858;
+    text-align: center;
+}
+.profil-remerciments{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.detail-informations{
+    margin-bottom: 40px;
+}
+@media (min-width: 600px) {
+    
+}
+@media (min-width: 1024px) {
+    .profil-informations{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .profil-remerciments{
+        display: flex;
+        flex-direction: column;
+        margin-left: 85%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1280px) {
+
+}

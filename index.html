@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="import/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all-page">
+        <!--MENU IMPORT-->
+        <div id="menu-container"></div>
+        <script>
+            fetch('import/menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                })
+                .catch(error => console.error('Erreur lors du chargement du menu:', error));
+        </script>
+        <!--PAGE-->
+        <div class="page-main">
+            <!--PAGE 1-->
+            <div class="profil-informations">
+                <h1 class="profil-name">Jasmine Avakova</h1>
+                <p class="profil-presentation">Bonjour à tous, je suis ravie de vous accueillir sur mon portfolio!</p>
+                <p class="profil-presentation">Je suis étudiante en troisième année de <strong>Licence Infomatique</strong> parcours <strong>MIAGE¹</strong> à l'Université de Paris Saclay.</p>
+                <p class="profil-presentation">Vous y trouverez l'intégralité de mon parcours scolaire. Ainsi que mes réalisations personnelles et académiques.</p>
+                <p class="profil-presentation"> Et pour terminer, mon expérience dans le domaine informatique.</p>
+                <p class="profil-informa-liens">Vous trouverez ci-joint des liens pour accéder à mon profil LinkedIn et à mon GitHub :</p>
+                <div class="logo-img">
+                    <a href="https://fr.linkedin.com/in/jasmine-avakova"><img src="img/logo-linkdin.png" class="logo-img-link"></a>
+                    <a href="https://github.com/jimistay"><img src="img/logo-github.png" class="logo-img-git"></a>
+                </div>
+                <div class="profil-remerciments">
+                    <p class="profil-remerciments-p"><i>Bonne lecture,</i></p>
+                    <p class="profil-remerciments-p"><i>Jasmine</i></p>
+                </div>
+                <div class="detail-informations">
+                    <p class="detail-informations-p">MIAGE¹ : Méthodes Informatiques Appliquées à la Gestion des Entreprises</p>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div id="footer-container"></div>
+        <script>
+            fetch('import/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Erreur lors du chargement du menu:', error));
+        </script>
+    </div>
+</body>
+</html>

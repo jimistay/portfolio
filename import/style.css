@@ -1,0 +1,194 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.hidden {
+    display: none;
+}
+.all-page{
+    background: #f1f1f1;
+}
+p, a, h1, h2, h3, h4, h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 88, 88);
+    font-size: 20px;
+}
+.page-main{
+    width: 90%;
+    margin: 0 auto;
+}
+.logo-img-link{
+    width: 80px;
+}
+.logo-img-git{
+    width: 100px;
+}
+.logo-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pp{
+    width: 30px;
+}
+
+.profil-informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profil-name{
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+.profil-presentation{
+    margin-bottom: 30px;
+}
+.profil-remerciments-p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #5c5858;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.detail-informations{
+    margin-bottom: 40px;
+}
+.detail-informations-p {
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #5c5858;
+}
+footer{
+    background-color: #6c0b45;
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-link{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-link{
+    width: 50px;
+    margin-top: 10px;
+}
+.info-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.607);
+    font-size: 19px;
+    font-family: "Bariol Regular";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+}
+.nav-left{
+    display: flex;
+    margin-bottom: 20px;
+    background-size: 375px;
+    height: 175px;
+    position: fixed;
+    background-color: #6c0b45c9;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+}
+.nav-left-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.nav-left-li{
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.nav-left-a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.607);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.profil-informa-liens{
+    font-size: 19px;
+    font-family: "Bariol Regular";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #aba2a2;
+    text-align: center;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #6c0b46;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.info-p-f{
+    color: #fdf9f4;
+    font-style: italic;
+}
+@media (min-width: 600px) {
+    .nav-left{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1024px) {
+    .footer-link{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-left{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .nav-left-ul{
+        margin-right: 5%;
+    }
+   
+
+}
+@media (min-width: 1280px) {
+
+}

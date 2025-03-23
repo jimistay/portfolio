@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../import/style.css">
+  <link rel="stylesheet" href="card.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Not+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="card.css" />
+  <title>Arthur Lemaitre Portfolio</title>
+  <!--L'animation des images-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+    integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcyelIx+NDyNHFmtqvuIgOFQnI34WA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
+    integrity="sha512-Oi2rb7RCg9JJzHCNFHsZgzlreLA/C4mNWCDMGHwhzVtPrQJey0zKnc9t8gwO5uzPJQNc9rC3zJksZb4/rKY+9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- GSAP SCRIPT -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</head>
+<body>
+    <!--MENU IMPORT-->
+    <div id="menu-container"></div>
+    <script>
+        fetch('../../import/menu.html')
+            .then(response => response.text())
+            .then(data => {
+               document.getElementById('menu-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+    </script>
+    <!--PAGE 4-->
+    <div class="projet">
+      <h2 class="title projet-p-title">Projets :</h2>
+        <div class="projet-all">
+            <div class="card">
+              <h4>Facture</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('img/facture.png');
+                  ">
+                  <!--
+                    <h2 class="h2-black">Facture</h2>
+                    -->
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                            <a href="https://github.com/jimistay/facture" target="_blank">
+                              <img
+                              src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                              alt=""
+                              class="pp"
+                            />
+                            </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage : HTML, CSS, JS</h3>
+                        <p>Réalisé à partir d'un cahier des charges.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <div class="card">
+                <h4>Gestion d'un Zoo</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('projets/zoo.png');
+                  ">
+                  
+                    <h2 class="h2-black">Gestion d'un Zoo</h2>
+                    
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                        <a href="https://github.com/jimistay/gestion_zoo" target="_blank">
+                        <img
+                          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                          alt=""
+                          class="pp"
+                        />
+                        </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage : PHP (PDO procédural)</h3>
+                        <p>
+                          Réalisé à partir d'un cahier des charges.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            -->
+              <div class="card">
+                <h4>Gestion des locations</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('img/vva.png');
+                  ">
+                  <!--
+                    <h2 class="h2-black">Gestion des locations</h2>
+                    -->
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                        <a href="https://github.com/jimistay/gestion_locations_vva" target="_blank">
+                        <img
+                          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                          alt=""
+                          class="pp"
+                        />
+                        </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage: Laravel</h3>
+                        <p>Réalisé à partir d'un cahier des charges.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h4>Application de gestion des livres</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('img/bibliotheque.png');
+                  ">
+                  <!--
+                    <h2 class="h2-white">Application de gestion des livres</h2>
+                    -->
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                        <a href="https://github.com/jimistay/gestion_bibliotheque" target="_blank">
+                        <img
+                          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                          alt=""
+                          class="pp"
+                        />
+                        </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage : C#</h3>
+                        <p>Réalisé à partir d'un cahier des charges personnel.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <div class="card">
+                <h4>Gestion DVD'S</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('projets/dvd.png');
+                  ">
+                  
+                    <h2 class="h2-black">Gestion DVD'S</h2>
+                  
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                        <a href="https://github.com/jimistay/gestion_dvd_groupe" target="_blank">
+                        <img
+                          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                          alt=""
+                          class="pp"
+                        />
+                        </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage : C#</h3>
+                        <p>Réalisé à partir d'un cahier des charges personnel.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              -->
+              <div class="card">
+                <h4>Portfolio</h4>
+                <div class="card__inner">
+                  <div class="card__face card__face--front" style="background-image: url('img/portfolio.png');
+                  ">
+                  <!--
+                    <h2 class="h2-black">Portfolio</h2>
+                    -->
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__content">
+                      <div class="card__header">
+                        <a href="https://github.com/jimistay/portfolio_bts" target="_blank">
+                        <img
+                          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                          alt=""
+                          class="pp"
+                        />
+                        </a>
+                      </div>
+                      <div class="card__body">
+                        <h3>Langage : HTML, CSS, JS</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div id="footer-container"></div>
+    <script>
+        fetch('../../import/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+<script>
+    let lightbox = new SimpleLightbox(".gallery a", {
+      /* options */
+    });
+  </script>
+
+<script src="app.js"></script>
+<script>
+  gsap.from(".card", {
+    scrollTrigger: ".card",
+    y: 100,
+    opacity: 0.7,
+    stagger: 0.05,
+    duration: 2,
+    ease: "power4.out",
+    stagger: {
+      amount: 0.3,
+    },
+  });
+  </script>
+</html>

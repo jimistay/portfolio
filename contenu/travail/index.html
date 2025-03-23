@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../import/style.css">
+    <script type="text/javascript" src="../main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--MENU IMPORT-->
+    <div id="menu-container"></div>
+    <script>
+        fetch('../../import/menu.html')
+            .then(response => response.text())
+            .then(data => {
+               document.getElementById('menu-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+    </script>
+    <!--PAGE 3-->
+    <div class="experience">
+        <div class="experience-all">
+          <h2 class="title experience-p-title">Mes experiences :</h2>
+            <div class="experice-first">
+                <div class="experience-first-block">
+                    <div class="experience-pre-stage-info-gauche">
+                        <p class="experience-p-title-a">Développeur d'applications chez Supplay</p>
+                        <p class="experience-p">Stage : 6 semaines (Mai-juillet 2023)</p>
+                        <p class="experience-p">Développement API (PHP Symfony)</p>
+                    </div>
+                    <div class="experience-logo-1">
+                        <img class="supplay" src="img_stage1/supplay-logo.png">
+                    </div>
+                </div>
+                <div class="experience-second-block">
+                    <p class="experience-p-supplay">Supplay est une entreprise spécialisée dans le <strong>service de recrutement</strong> intérim dans un grand nombre de secteurs d'activité : btp, industrie, tertiaire, cadre ou cadre commercial.</p>
+                    <p class="experience-p-supplay">Elle compte <strong>184 agences</strong>  en France et l'objectif de l'équipe de developpement est d'automatiser les tâches.</p>
+                    <p class="experience-p">Durant ce stage, j'ai participé à la création d'API (Application programming interface) avec PHP Symfony, en effectuant diverses missions.</p>
+                </div>
+                <p class="experience-p">Voici quelques exemples:</p>
+                <div class="img-first-stage">
+                    <div class="block-mission">
+                        <p class="experience-p">Création des routes en : POST, GET, PUT DELETE et retour en JSON</p>
+                        <button onclick="toggleImagesVisibility(this)">Détails</button>
+                    </div>
+                    <div class="gallery">
+                        <!--
+                        <a href="img_stage1/ticket-img.png"><img src="img_stage1/ticket-img.png" class="img-ticket hidden"></a> -->
+                        <a href="img_stage1/get-post.png"><img src="img_stage1/get-post.png" class="img-get-post hidden"></a>
+                        <a href="img_stage1/vue-get.png"> <img src="img_stage1/vue-get.png" class="img-vue-get hidden"></a>
+                        <a href="img_stage1/get-code.png"><img src="img_stage1/get-code.png" class="img-get-code hidden"> </a>
+                    </div>         
+                </div>
+                <div class="img-first-stage">
+                    <div class="block-mission">
+                        <p class="experience-p">Création de collection Postman</p>
+                    <button onclick="toggleImagesVisibility(this)">Détails</button>
+                    </div>
+                    <div class="gallery">
+                        <a href="img_stage1/postman.png"><img src="img_stage1/postman.png" class="img-postman hidden"></a>
+                    </div>
+                </div>
+                <div class="img-first-stage">
+                    <div class="block-mission">
+                        <p class="experience-p">Réalisation des tests unitaires</p>
+                        <button onclick="toggleImagesVisibility(this)">Détails</button>
+                    </div>
+                    <div class="gallery">
+                        <a href="img_stage1/test-uni-ex.png"><img src="img_stage1/test-uni-ex.png" class="img-test-uni-ex hidden"></a>
+                        <a href="img_stage1/test-realised.png"><img src="img_stage1/test-realised.png" class="img-test-realised hidden"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separation"></div>
+        <div class="second-stage-exp">
+            <div class="experience-first-block">
+                <div class="experience-pre-stage-info-gauche">
+                    <p class="experience-p-title-a">Développer Full Stack chez Retrokube</p>
+                    <p class="experience-p">Second stage : 6 semaines</p>
+                    <p class="experience-p">Décembre-Janvier 2023-2024</p>
+                </div>
+                <div>
+                    <img src="img_stage2/retrokube-logo.png" class="retrokube-img">
+                </div> 
+            </div>
+            <div class="experience-second-block">
+                <p class="experience-p-supplay">Retrokube est une entreprise qui réalise du <strong>graphisme, des applications web, des applications mobiles, des expériences VR, des stratégie marketing</strong>.</p>
+                <p class="experience-p-supplay">L'entreprise est composée de <strong>4 personnes</strong>  (le fondateur, une graphiste UX UI, un développeur Full Stack et une développeuse Web).</p>
+                <div>
+                    <p class="experience-p exemple">Voici quelques exemples des missions:</p>
+                    <p class="experience-p">Développement d'un site internet en PHP Laravel 8.2</p>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Développement des pages à partir d'une maquette (Adobe Xd).</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <div class="gallery">
+                            <a href="img_stage2/maquette-all.png"><img src="img_stage2/maquette-all.png" class="maquette-all hidden"></a>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Stylisation en scss des pages de manière responsive (mobile, tablette, ordinateur : de 300px à 2736px).</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <div class="gallery">
+                            <a href="img_stage2/ex-css.png"><img src="img_stage2/ex-css.png" class="ex-css hidden"></a>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Développement des routes pour le front et le Backoffice.</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <div class="gallery">
+                            <a href="img_stage2/routes.png"><img src="img_stage2/routes.png" class="routes hidden"></a>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Développement des Controllers.</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <div class="gallery">
+                            <a href="img_stage2/controller.png"><img src="img_stage2/controller.png" class="controller hidden"></a>
+                            <a href="img_stage2/ex-controller.png"><img src="img_stage2/ex-controller.png" class="ex-controller hidden"></a>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Création des migrations pour adapter la base de données aux changements.</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <div class="gallery">
+                            <a href="img_stage2/migrate.png"><img src="img_stage2/migrate.png" class="migrate hidden"></a>
+                            <a href="img_stage2/table-update.png"><img src="img_stage2/table-update.png" class="table-update hidden"></a>
+                            <a href="img_stage2/model.png"><img src="img_stage2/model.png" class="model hidden"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-first-stage">
+                    <div class="block-mission">
+                        <p class="experience-p">Intégration de la traduction pour un site internet en React à l'aide des variables JSON (i18n).</p>
+                        <button onclick="toggleImagesVisibility(this)">Détails</button>
+                    </div>
+                    <div class="gallery">
+                        <a href="img_stage2/trad1.png"><img src="img_stage2/trad1.png" class="trad1 hidden"></a>
+                        <a href="img_stage2/trad4.png"><img src="img_stage2/trad4.png" class="trad4 hidden"></a>
+                        <a href="img_stage2/trad2.png"><img src="img_stage2/trad2.png" class="trad2 hidden"></a>
+                        <a href="img_stage2/trad3.png"><img src="img_stage2/trad3.png" class="trad3 hidden"></a>
+                    </div>
+                </div>
+                <div>
+                    <p class="experience-p last-p-experience">Création et stylisation des motifs en DRUPAL en scss.</p>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <div class="experience-first-block">
+                <div class="experience-pre-stage-info-gauche">
+                    <p class="experience-p-title-a">Consultante IT chez Norsys</p>
+                    <p class="experience-p">Alternance</p>
+                    <p class="experience-p">Septembre 2024-Septembre 2025</p>
+                </div>
+                <div>
+                    <img src="norsys.png" class="norsys-img">
+                </div> 
+            </div>
+            <div class="experience-3-block">
+                <p class="experience-p-supplay">Norsys Paris est une ESN <strong>spécialisée en conseil, pilotage de projets et développement d’applications sur mesure</strong>. Elle accompagne ses clients avec des solutions technologiques innovantes.</p>
+                <div>
+                    <p class="experience-p exemple">Voici quelques exemples des missions:</p>
+                    <p class="experience-p">Client MGEN</p>
+                    <p class="experience-p">Elaboration d’une stratégie de recette à partir du cahier des charges.</p>
+                    <p class="experience-p">Elaboration d’un jeu de données conforme aux cas.</p>
+                    <p class="experience-p">Réalisation des tests fonctionnels (cas de tests, TNR).</p>
+                    <p class="experience-p">Travail sur les outils internes : ORION, ALM.</p>
+                    <p class="experience-p">Jira Software</p>
+                    <p class="experience-p">SQL Oracle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--FOOTER-->
+    <div id="footer-container"></div>
+    <script>
+        fetch('../../import/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+    </script>
+
+    <script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".gallery img");
+
+    images.forEach((img) => {
+        img.addEventListener("click", function (event) {
+            event.preventDefault(); 
+
+            let overlay = document.getElementById("image-overlay");
+            if (!overlay) {
+                overlay = document.createElement("div");
+                overlay.id = "image-overlay";
+                overlay.innerHTML = `
+                    <span id="close-overlay">&times;</span>
+                    <img id="overlay-img" src="" alt="Image en plein écran">
+                `;
+                document.body.appendChild(overlay);
+
+                document.getElementById("close-overlay").addEventListener("click", function () {
+                    overlay.style.display = "none";
+                });
+
+                overlay.addEventListener("click", function (e) {
+                    if (e.target === overlay) {
+                        overlay.style.display = "none";
+                    }
+                });
+            }
+            document.getElementById("overlay-img").src = this.src;
+            overlay.style.display = "flex";
+        });
+    });
+});
+    </script>
+</body>
+
+</html>

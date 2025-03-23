@@ -1,0 +1,130 @@
+body{
+    background-color: #fdf9f4;
+}
+.poursuite{
+    width: 90%;
+    margin: 0 auto;
+    height: 430px;   
+    margin-top: 200px;
+}
+.poursuite-cv-lettre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.poursuite-cv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdf-canvas{
+    width: 200px;
+    height: auto;
+}
+.poursuite-lettre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-poursuite-voi{
+    width: 16px;
+}
+
+.poursuite-p{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #5c5858;
+}
+.poursuite-p-descrip{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: rgb(171, 162, 162);
+    text-align: center;
+}
+.veille{
+    width: 100%;
+}
+.veille-all{
+    width: 90%;
+    margin: 0 auto;
+}
+.title-veille-techno{
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.img-veille{
+    width: 300px;
+    margin: 0 auto;
+}
+.img-veille1{
+    width: 300px;
+    margin: 0 auto;
+}
+.certificat-img{
+    width: 100px;
+}
+.parcours-line{
+    width: 90%;
+    margin: 0 auto;
+}
+.parcours-line{
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-poursuite-voi, .img-poursuite-tele{
+    width: 25px;
+}
+.img-poursuite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (min-width: 600px) {
+
+}
+@media (min-width: 1024px) {
+    .projet-p-title{
+        text-align: left;
+        text-decoration : underline;
+    }
+    .poursuite{
+        height: auto;
+    }
+    .poursuite-cv{
+        margin-bottom: 100px;
+    }
+    .pdf-canvas{
+        width: 400px;
+    }
+    .img-poursuite{
+        margin-top: 30px;
+    }
+    .poursuite-p{
+        text-align: left;
+    }
+}
+@media (min-width: 1280px) {
+
+}

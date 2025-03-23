@@ -1,0 +1,131 @@
+.projet{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+body{
+    background-color: #fdf9f4;
+}
+.projet-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-github-lien{
+    width: 100px;
+    /*display: none;*/
+}
+.logo-github-lien:hover{
+    display: block;
+    width: 100px;
+}
+.projet-facture{
+    background-image: url(projets/facture.png);
+}
+.p-facture-title{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;/*#5c5858*/
+    text-align: center;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: background-color 0.5s ease; 
+}
+.p-facture{
+    display: block;
+}
+.p-facture{
+    display: none;
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5c5858;
+    text-align: center;
+    margin-top: 10px;
+}
+.projet-zoo{
+    background-image: url(img/zoo.png);
+}
+.projet-portfolio{
+    background-image: url(img/portfolio.png);
+}
+.projet-bibliotheque{
+    background-image: url(img/bibliotheque.png);
+}
+.projet-vva{
+    background-image: url(img/vva.png);
+}
+.projet-view{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-color: black;
+    transition: 0.5s;
+}
+.projet-view:hover{
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+}
+.projet-dvd{
+    background-image: url(projets/dvd.png);
+}
+.projet-vva {
+    background-image: url(projets/vva.png);
+}
+.projet-view .p-facture,
+.projet-view .logo-github-lien {
+    display: none;
+}
+.projet-view:hover .p-facture,
+.projet-view:hover .logo-github-lien{
+    display: flex;
+}
+h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.projet-p-title{
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .projet-p-title{
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .projet-all{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        justify-content: space-around;
+    }
+    .card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 1024px) {
+    
+}
+@media (min-width: 1280px) {
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../import/style.css">
+    <script type="text/javascript" src="../main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--MENU IMPORT-->
+    <div id="menu-container"></div>
+    <script>
+        fetch('../../import/menu.html')
+            .then(response => response.text())
+            .then(data => {
+               document.getElementById('menu-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+    </script>
+    <!--PAGE 5-->
+    <div class="poursuite-all" id="poursuiteContent">
+        <div class="poursuite">
+            <h2 class="title projet-p-title">Recherche d'alternance :</h2>
+            <p class="poursuite-p">Dans le cadre ma formation <i>MASTER MIAGE</i> je recherche d'une alternance dans le domaine <strong>informatique</strong> pour une durée de 2 ans. </p>
+        <div class="poursuite-cv-lettre">
+            <div class="poursuite-cv">
+                <p class="poursuite-p-descrip">Voici mon CV:</p>
+                <canvas class="pdf-canvas" ></canvas>
+                <div class="img-poursuite">
+                    <a href="CV.pdf" target="_blank">
+                        <img class="img-poursuite-voi" src="../../img/eye.svg">
+                    </a>
+                    <a><img class="img-poursuite-tele" src="../../img/download_black.svg"></a>
+                </div>
+            </div>
+            <!--
+            <div class="poursuite-lettre">
+                <p class="poursuite-p-descrip">Voici ma lettre de motivation:</p>
+                <canvas class="pdf-canvas" ></canvas>
+                <div class="img-poursuite" >
+                    <a href="CV_lettre/lettre.pdf" target="_blank">
+                        <img class="img-poursuite-voi" src="img/eye.svg">
+                    </a>
+                    <a><img class="img-poursuite-tele" src="img/download_black.svg"></a>
+                </div>
+            </div>
+            -->
+        </div>
+        </div>
+    </div>
+   </div>
+    <!--FOOTER-->
+    <div id="footer-container"></div>
+    <script>
+        fetch('../../import/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du menu:', error));
+    </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+<script>
+    let lightbox = new SimpleLightbox(".gallery a", {
+      /* options */
+    });
+</script>
+</html>

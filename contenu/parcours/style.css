@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background-color: #fdf9f4;;
+}
+.hidden {
+    display: none;
+}
+.parcours{
+    width: 90%;
+    margin: 0 auto;
+}
+.parcours{
+    margin-top: 200px;
+}
+.parcours-info-titre{
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.timeline-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.timeline-block {
+    margin-bottom: 30px;
+}
+.filiere{
+    color: #6c0b45;
+}
+p,a{
+    font-size: 19px;
+    font-family: "Bariol Regular";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5c5858;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+   
+}
+@media (min-width: 1024px) {
+    .parcours{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fdf9f4;
+    }
+    .parcours-info{
+        height: auto;
+    }
+    .parcours-img{
+        width: 900px;
+    }
+    .parcours-info-titre{
+        margin-top: 5px;
+        padding-top: 0;
+        text-align: left;
+        width: 90%;
+    }
+    .parcours-line{
+        width: 100%;
+        position: relative;
+        background-color: rgb(253, 249, 244);
+        padding: 50px 0px;
+        margin: 50px auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .parcours-line::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        z-index: 1;
+        background: rgb(35, 32, 36);
+    }
+    .timeline-block-right {
+        float: right;
+    }
+    .timeline-block-left {
+        float: left;
+        direction: rtl;
+    }
+    .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+    }
+    .timeline-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .marker {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background: #6c0b46;/*rgb(170, 53, 186)*/
+        margin-top: 10px;
+        z-index: 9999;
+    }
+    .timeline-content {
+        width: 95%;
+        color: rgb(102, 102, 102);
+        padding: 0px 15px;
+    }
+    
+    .timeline-block-left {
+        float: left;
+        direction: rtl;
+    }
+
+}
+@media (min-width: 1280px) {
+
+}
