@@ -115,6 +115,14 @@ footer{
     z-index: 10000;
     width: 100%;
 }
+.nav-left-li:hover{
+    color: #6c0b46;
+    transition: 3s;
+}
+.nav-left-li:hover a{
+    transition: 1s;
+    color: #6c0b46;
+}
 .nav-left-ul{
     display: flex;
     flex-direction: row;
